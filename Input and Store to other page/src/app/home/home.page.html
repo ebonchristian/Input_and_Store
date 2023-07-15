@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Error System
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <div id="container">
+    <strong>Hello World("print")</strong>
+
+    <ion-card-content>
+   
+
+      <ion-item>
+        <ion-input type="number" label="Heart Rate" placeholder="bpm" [(ngModel)]="heartRate"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="number" label="Blood Pressure" placeholder="mmHg" [(ngModel)]="bloodPressure"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-input type="number" label="Oxygen Level" placeholder="%" [(ngModel)]="oxygenLevel"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-button (click)="submitData()">Submit</ion-button>
+        <ion-button (click)="viewReport()">View Report</ion-button>
+
+      </ion-item>  
+      
+    </ion-card-content>
+      
+  </div>
+
+</ion-content>
