@@ -1,8 +1,8 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>report</ion-title>
-
-    <ion-button slot="end" routerLink="/home">back</ion-button>
+    <ion-title>Report</ion-title>
+    <ion-button slot="end" routerLink="/home">Back</ion-button>
+    <ion-button slot="end" (click)="printReport()">Print</ion-button>
   </ion-toolbar>
 </ion-header>
 
@@ -13,6 +13,4 @@
     <p>Blood Pressure: {{ bloodPressure }}</p>
     <p>Oxygen Level: {{ oxygenLevel }}</p>
   </ion-content>
-  
-  
 </ion-content>
